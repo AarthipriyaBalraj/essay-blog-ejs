@@ -1,0 +1,95 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222;
+  font-family: sans-serif;
+  color: hotpink;
+  padding: 2rem;
+}
+
+/* Main container */
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* Form layout - stacked line by line */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Input and textarea styles */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+}
+
+/* Textarea specifics */
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Submit button */
+input[type="submit"] {
+  background-color: hotpink;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: deeppink;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #ccc;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #111;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  input, textarea {
+    font-size: 0.95rem;
+  }
+}
